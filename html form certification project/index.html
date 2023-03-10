@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <link
+      href="https://fonts.googleapis.com/css?family=Anton%7CBaskervville%7CRaleway&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <form id="survey-form">
+      <label id="name-label">Name: <input required name="first-name" id="name" type="text" placeholder="Enter Name Here..."></label>
+      <hr>
+      <label id="email-label" for="email">Email: <input required id="email" name="email" type="email" placeholder="Enter your email"></label>
+      <hr>
+      <label id="number-label">Age: <input type="number" id="number" min="4" max="12" placeholder="Enter your age..."</label>
+      <hr>
+      <label for="dropdown">Which option best describes your current role?</label><select id="dropdown">
+        <option>Student</option>
+        <option>Professional</option>
+      </select>
+      <hr>
+      <p>Would you recommend freeCodeCamp to a friend?</p>
+      <input type="radio" id="yes" name="recommend" value="yes">
+  <label for="yes">Yes</label><br>
+  <input type="radio" id="no" name="recommend" value="no">
+  <label for="no">No</label><br>
+      <hr>
+      <p>What would you like to see improved? </p><br>
+       <input type="checkbox" id="frontend" name="frontend" value="frontend">
+  <label for="frontend"> Front-End Projects</label><br>
+  <input type="checkbox" id="backend" name="backend" value="backend">
+  <label for="backend"> Back-End Projects</label><br>
+      <hr>
+      <p>Any comments or suggestions?</p>
+      <textarea placeholder="Enter comments here..."></textarea>
+      <hr>
+      <input id="submit" type="submit">
+    </form>
+  </body>
+</html>
